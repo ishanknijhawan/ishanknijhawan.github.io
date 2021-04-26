@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.parent-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    clip-path: polygon(
+        50% 0%,
+        100% 0px,
+        100% 73.53%,
+        75.35% 100%,
+        0px 87.12%,
+        0px 0px
+    );
+    background: coral;
+}
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    z-index: 2;
+    background: white;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.title,
+.desc {
+    margin: auto;
+    text-align: center;
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sneaker img {
+    height: 15rem;
+    z-index: 4;
+    transition: all 0.4s ease-out;
+}
+.circle {
+    width: 16rem;
+    height: 16rem;
+    background: linear-gradient(
+        to bottom,
+        rgb(175, 228, 83),
+        rgb(140, 212, 24)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.info {
+    padding-top: 2rem;
+}
+
+.info h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+.info h3 {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+.sizes button {
+    transition-duration: 0.75s;
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+.sizes button:hover {
+    background: #585858;
+    color: white;
+}
