@@ -17,7 +17,7 @@ container.addEventListener("mousemove", (e) => {
 container.addEventListener("mouseenter", (e) => {
     card.style.transition = "none";
     //Popout
-    title.style.transform = "translateZ(150px)";
+    title.style.transform = "translateZ(200px)";
     sneaker.style.transform = "translateZ(200px) rotateZ(-30deg)";
     description.style.transform = "translateZ(125px)";
     sizes.style.transform = "translateZ(100px)";
@@ -32,3 +32,16 @@ container.addEventListener("mouseleave", (e) => {
     description.style.transform = "translateZ(0px)";
     sizes.style.transform = "translateZ(0px)";
 });
+
+function scrollMagicX() {
+    const controlller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+        duration: "200%",
+        triggerElement: ".about-me",
+        triggerHook: 0,
+    })
+        .setPin(".about-me")
+        .addTo(controlller);
+}
+
+scrollMagicX();

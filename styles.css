@@ -4,17 +4,53 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
+.container-plus {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    perspective: 1000px;
+    perspective: 2000px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+.projects {
+    display: flex;
+    height: 300vh;
+}
+.about-me {
+    width: 50%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+}
+.three-screens {
+    width: 50%;
+}
+.three-screens div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: white;
+    color: white;
+}
+.one {
+    background-color: burlywood;
+}
+.second {
+    background-color: lightcoral;
+}
+.third {
+    background-color: lightblue;
 }
 .parent-container {
     width: 100%;
     height: 100vh;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,12 +58,12 @@ body {
     clip-path: polygon(
         50% 0%,
         100% 0px,
-        100% 73.53%,
-        75.35% 100%,
-        0px 87.12%,
+        99.92% 43.01%,
+        25.33% 99.33%,
+        0px 63.67%,
         0px 0px
     );
-    background: coral;
+    background: linear-gradient(to right, rgb(175, 228, 83), rgb(140, 212, 24));
 }
 .container {
     width: 50%;
