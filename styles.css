@@ -136,13 +136,6 @@ body {
 .three-screens {
     width: 70%;
 }
-/* .three-screens div {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-} */
 .one-parent,
 .second-parent,
 .third-parent {
@@ -159,8 +152,9 @@ body {
 }
 .proj-one-desc,
 .proj-second-desc,
-proj-third-desc {
-    font-size: 1rem;
+.proj-third-desc {
+    font-weight: 500;
+    font-size: 1.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -168,25 +162,44 @@ proj-third-desc {
     margin: 0.5rem;
     height: 100vh;
     display: flex;
-    border-radius: 20px;
-    background: linear-gradient(to right, #f87883, #ffd294);
     flex-direction: column;
+}
+.one-abs {
+    height: 70vh;
+    width: 60%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(to left, #e24d5a, #fdbd64);
+}
+.second-abs {
+    height: 70vh;
+    width: 60%;
+    z-index: -1;
+    align-self: flex-end;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(to left, #83b4df, #346188);
+}
+.third-abs {
+    height: 70vh;
+    width: 60%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ecdf64, #c4b854);
 }
 .second {
     margin: 0.5rem;
     height: 100vh;
     display: flex;
-    border-radius: 20px;
     flex-direction: column;
-    background: linear-gradient(to right, #72a6d3, #5a7d9b);
 }
 .third {
     margin: 0.5rem;
     height: 100vh;
     display: flex;
-    border-radius: 20px;
     flex-direction: column;
-    background: linear-gradient(to left, #e4dfaf, #cac173);
 }
 .one-phones,
 .second-phones,
@@ -217,6 +230,16 @@ proj-third-desc {
     font-size: 1rem;
     align-self: center;
     color: white;
+    margin-bottom: 10rem;
+}
+.one-view-proj {
+    background: #cf3441;
+}
+.second-view-proj {
+    background: #1e5483;
+}
+.third-view-proj {
+    background: #948b38;
 }
 .one-view-proj:hover {
     background: #cf3441;
