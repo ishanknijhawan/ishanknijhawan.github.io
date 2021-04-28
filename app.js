@@ -37,10 +37,10 @@ function scrollMagicX() {
     const controlller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
         duration: "200%",
-        triggerElement: ".about-me",
+        triggerElement: ".my-apps-header",
         triggerHook: 0,
     })
-        .setPin(".about-me")
+        .setPin(".my-apps-header")
         .addTo(controlller);
 }
 
