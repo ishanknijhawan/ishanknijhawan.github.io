@@ -115,11 +115,18 @@ body {
     background: #585858;
     color: white;
 }
-.projects {
+
+.projects,
+.intro {
     display: flex;
     height: 300vh;
 }
-.my-apps-header {
+.intro {
+    display: flex;
+    height: 200vh;
+}
+.my-apps-header,
+.intro-header {
     width: 30%;
     display: flex;
     height: 100vh;
@@ -127,7 +134,8 @@ body {
     justify-content: center;
     margin: 0 !important;
 }
-.my-apps {
+.my-apps,
+.my-intro {
     border: 1.5px solid black;
     padding: 3rem 1rem 3rem 1rem;
     font-family: "Montserrat";
@@ -233,7 +241,7 @@ body {
     margin-bottom: 10rem;
 }
 .one-view-proj {
-    background: #97713c;
+    background: #b33741;
 }
 .second-view-proj {
     background: #1e5483;
@@ -243,7 +251,7 @@ body {
 }
 .one-view-proj:hover {
     background: transparent;
-    color: #97713c;
+    color: #b33741;
 }
 .second-view-proj:hover {
     background: transparent;
@@ -252,4 +260,17 @@ body {
 .third-view-proj:hover {
     background: transparent;
     color: #948b38;
+}
+
+.intro-one,
+.intro-two,
+.intro-three {
+    height: 100vh;
+}
+.f-contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightblue;
 }

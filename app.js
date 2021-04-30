@@ -36,12 +36,21 @@ container.addEventListener("mouseleave", (e) => {
 function scrollMagicX() {
     const controlller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
+        duration: "100%",
+        triggerElement: ".intro-header",
+        triggerHook: 0,
+    })
+        .setPin(".intro-header")
+        .addTo(controlller);
+
+    const controlller2 = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
         duration: "200%",
         triggerElement: ".my-apps-header",
         triggerHook: 0,
     })
         .setPin(".my-apps-header")
-        .addTo(controlller);
+        .addTo(controlller2);
 }
 
 scrollMagicX();
