@@ -12,7 +12,7 @@
     perspective: 2000px;
 }
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     min-height: 100vh;
 }
 .parent-container {
@@ -57,6 +57,7 @@ body {
 .desc {
     margin: auto;
     text-align: center;
+    font-family: "Montserrat";
 }
 
 .sneaker {
@@ -263,9 +264,26 @@ body {
 }
 
 .intro-one,
-.intro-two,
-.intro-three {
+.intro-two {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-one {
+    background-color: #083042;
+}
+.intro-two {
+    background-color: lightcyan;
+}
+.intro-desc,
+.skills-text {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-family: "Montserrat";
+    color: white;
 }
 .f-contact {
     height: 100vh;
@@ -273,4 +291,12 @@ body {
     align-items: center;
     justify-content: center;
     background: lightblue;
+}
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+.logos img {
+    height: 15rem;
+    fill: white;
 }
