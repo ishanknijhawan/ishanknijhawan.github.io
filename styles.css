@@ -271,7 +271,7 @@ body {
     justify-content: center;
 }
 .intro-one {
-    background-color: #083042;
+    background: linear-gradient(to right, #165470, #083042);
 }
 .intro-two {
     background-color: lightcyan;
@@ -282,6 +282,7 @@ body {
     padding-right: 5rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    text-align: center;
     font-family: "Montserrat";
     color: white;
 }
@@ -296,7 +297,24 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
-.logos img {
+.logos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.android-outline,
+.flutter-outline,
+.kotlin-outline {
     height: 15rem;
-    fill: white;
+}
+.h-android,
+.h-flutter,
+.h-kotlin {
+    padding-top: 1rem;
+}
+.project-one-desc,
+.project-second-desc,
+.project-third-desc {
+    text-align: center;
 }
